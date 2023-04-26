@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace functions_ex3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            addition();
+            subtraction();
+            multiplication();
+            division();
+
+            Console.Read();
+        }
+        static void addition()
+        {
+            //int num1=2, num2=4, sum;
+            // sum = num1 + num2;
+            Console.WriteLine("*addition of numbers*");
+
+            Console.WriteLine("Enter two numbers");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int sum = num1 + num2;
+            Console.WriteLine("addition of two numbers = " + sum);
+
+        }
+        static void subtraction()
+        {
+            Console.WriteLine("*subtraction of numbers*");
+
+            Console.WriteLine("Enter two numbers");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int sub = num1 - num2;
+            Console.WriteLine("subtraction of two numbers = " + sub);
+        }
+        static void multiplication()
+        {
+            Console.WriteLine("*multiplication of numbers*");
+
+            Console.WriteLine("Enter two numbers");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int mul = num1 * num2;
+            Console.WriteLine("multiplication of two numbers = " + mul);
+        }
+        static void division()
+        {
+            Console.WriteLine("*division of numbers*");
+
+            Console.WriteLine("Enter two numbers");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int div = num1 / num2;
+            Console.WriteLine("division of two numbers = " + div);
+        }
+
+    }
+}
